@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JS HandIn</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <canvas id="game" class="left"></canvas>
+        <div id="game-state" class="right">
+            <canvas id="extra-field"></canvas>
+            <table id="treasure-table"></table>
+            <img id="current-player" alt="Current player" src="">
+            <div id="actions">
+                <input type="image" src="img/svg/info.svg" alt="Help." id="info"/>
+                <input type="image" src="img/svg/save.svg" alt="Save game." id="save"/>
+                <input type="image" src="img/svg/load.svg" alt="Load saved game." id="load"/>
+                <input type="image" src="img/svg/settings.svg" alt="Show settings." id="settings"/>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+             <div id="dynamic"></div>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/index.js"></script>
+</body>
+</html>

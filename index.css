@@ -1,0 +1,212 @@
+body {
+    background-color: #9d80c9;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cg fill='%2332214f' fill-opacity='0.4'%3E%3Cpath d='M0 0h80v80H0V0zm20 20v40h40V20H20zm20 35a15 15 0 1 1 0-30 15 15 0 0 1 0 30z' opacity='.5'%3E%3C/path%3E%3Cpath d='M15 15h50l-5 5H20v40l-5 5V15zm0 50h50V15L80 0v80H0l15-15zm32.07-32.07l3.54-3.54A15 15 0 0 1 29.4 50.6l3.53-3.53a10 10 0 1 0 14.14-14.14zM32.93 47.07a10 10 0 1 1 14.14-14.14L32.93 47.07z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* Game area */
+#game {
+    border: solid #205507 10px;
+    cursor: url("./img/svg/cursor.svg"), auto;
+}
+
+/* State panel */
+#game-state {
+    position: relative;
+    border: solid #205507 10px;
+    background: rgba(91, 72, 118, 0.87);
+    cursor: url("./img/svg/cursor.svg"), auto;
+}
+
+#extra-field {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    cursor: url("./img/svg/rotate.svg"), auto;
+    border-bottom: dashed #205507 10px;
+}
+
+#current-player {
+    margin: 48px auto 0;
+    display: block;
+}
+
+#treasure-table {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+}
+
+#treasure-table td {
+    max-width: 15%;
+}
+
+#treasure-table img {
+    width: 40%;
+}
+
+/* Settings on state panel */
+#actions {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+}
+
+#actions input[type=image] {
+    background-color: #6c7b66;
+    height:36px;
+    width:36px;
+    cursor:pointer;
+    border: 4px outset #392a2a;
+    transition-duration: 0.4s;
+}
+
+#actions input[type=image]:hover {
+    background-color: #447d27;
+    border: 4px inset #392a2a;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+input[type=range]:hover {
+    opacity: 1;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+label, output {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 8px;
+}
+
+label {
+    margin-left: -8px;
+}
+
+input[type=text], select {
+    border-radius: 10px;
+    height: 24px;
+    font-size: 1rem;
+}
+
+em {
+    text-decoration: underline;
+}
+
+b {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+
+/* Popup window */
+/* https://www.w3schools.com/howto/howto_css_modals.asp */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    backdrop-filter: blur(4px);
+    color: #330052;
+}
+
+.modal h2, h3 {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+.modal h3 {
+    font-size: 1rem;
+    margin-top: 48px;
+}
+
+.modal p {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.modal button {
+    background-color: #330052;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 36px auto 0;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: rgb(112, 84, 123);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 1rem;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
