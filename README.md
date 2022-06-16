@@ -8,8 +8,8 @@ Written in JavaScript using MVC architecture. As part of it there are modularize
 
 ## Screenshots
 <p float="left">
-<img src="./screenshots/start_game.png"  alt="Game start"  width="70%"/>
-<img src="./screenshots/game_running.png" alt="Game while playing" width="70%"/>
-<img src="./screenshots/moving_fields.png"  alt="Moving fields"  width="70%"/>
-<img src="./screenshots/save_game.png" alt="Saving game" width="70%"/>
+<img src="./screenshots/start_game.png"  alt="Game start"  width="1000px"/>
+<img src="./screenshots/game_running.png" alt="Game while playing" width="1000px"/>
+<img src="./screenshots/moving_fields.png"  alt="Moving fields"  width="1000px"/>
+<img src="./screenshots/save_game.png" alt="Saving game" width="1000px"/>
 </p>
